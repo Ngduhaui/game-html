@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <title>2048</title>
+        <link rel="stylesheet" href="{% static 'app1\css\UniSurvey Maintenance_files\style.css' %}" />
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div class="container">
+            <div class="heading">
+                <div class="score-container">
+                    408
+                    <div class="score-addition">20</div>
+                </div>
+            </div>
+            <div class="game-container">
+                <div class="game-message">
+                    <p></p>
+                    <div class="lower">
+                        <a class="retry-button">Try again</a>
+                    </div>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                </div>
+
+                <div class="tile-container">
+                    <div class="tile tile-2 tile-position-1-4">2</div>
+                    <div class="tile tile-2 tile-position-1-4">2</div>
+                    <div class="tile tile-4 tile-position-1-4 tile-merged">4</div>
+                    <div class="tile tile-2 tile-position-2-3">2</div>
+                    <div class="tile tile-4 tile-position-2-4">4</div>
+                    <div class="tile tile-2 tile-position-3-2 tile-new">2</div>
+                    <div class="tile tile-2 tile-position-3-3">2</div>
+                    <div class="tile tile-16 tile-position-3-4">16</div>
+                    <div class="tile tile-8 tile-position-4-3">8</div>
+                    <div class="tile tile-8 tile-position-4-3">8</div>
+                    <div class="tile tile-16 tile-position-4-3 tile-merged">16</div>
+                    <div class="tile tile-64 tile-position-4-4">64</div>
+                </div>
+            </div>
+
+            <!-- partial -->
+            <script src="{% static 'app1\js\UniSurvey Maintenance_files\hammer.min.js' %}"></script>
+            <script src="{% static 'app1\js\UniSurvey Maintenance_files\script.js' %}"></script>
+        </div>
+    </body>
+</html>
